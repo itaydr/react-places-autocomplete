@@ -104,8 +104,8 @@ class PlacesAutocomplete extends React.Component {
       this.setState({ loading: true });
       this.autocompleteService.getPlacePredictions(
         {
-          ...this.props.searchOptions,
           input: value,
+          ...this.props.searchOptions
         },
         this.autocompleteCallback
       );
