@@ -102,6 +102,7 @@ class PlacesAutocomplete extends React.Component {
     const { value } = this.props;
     if (value.length) {
       this.setState({ loading: true });
+      // Enabling input override
       this.autocompleteService.getPlacePredictions(
         {
           input: value,
